@@ -6,29 +6,29 @@
 <title>Elijah Ayomide Olatunji | Research & Human Insights Specialist</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{
---navy:#0B1F3A;--navy2:#112740;--teal:#0F6E56;--teal-light:#1D9E75;
---gold:#BA7517;--gold-light:#EF9F27;--white:#ffffff;--off:#F7F8FA;
---text:#1a1a2e;--muted:#4a5568;--border:#e2e8f0;--card:#ffffff;
-}
 html{scroll-behavior:smooth}
-body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--white);line-height:1.6}
-nav{position:fixed;top:0;left:0;right:0;background:var(--navy);z-index:999;padding:0 2rem}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1a1a2e;background:#fff;line-height:1.6}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;background:#0B1F3A;z-index:999;padding:0 2rem}
 .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
-.nav-logo{color:#fff;font-weight:700;font-size:1rem;letter-spacing:.02em;text-decoration:none}
-.nav-logo span{color:#EF9F27}
+.nav-logo{color:#fff;font-weight:700;font-size:1rem;text-decoration:none}
+.nav-logo span{color:#FFD700}
 .nav-links{display:flex;gap:1.5rem;list-style:none}
-.nav-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.875rem;transition:color .2s}
+.nav-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.875rem}
 .nav-links a:hover{color:#fff}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
 .hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px}
-.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:var(--navy);padding:1rem 2rem;z-index:998}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:#0B1F3A;padding:1rem 2rem;z-index:998}
 .mobile-menu.open{display:block}
 .mobile-menu a{display:block;color:rgba(255,255,255,.8);text-decoration:none;padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.95rem}
-#hero{background:#0B1F3A;padding:120px 2rem 80px;min-height:100vh;display:flex;align-items:center}
+
+/* HERO */
+#hero{background:linear-gradient(135deg,#051428 0%,#0B1F3A 50%,#0d2d4a 100%);padding:120px 2rem 80px;min-height:100vh;display:flex;align-items:center}
 .hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:center}
 .hero-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(15,110,86,.25);border:1px solid rgba(29,158,117,.3);color:#5DCAA5;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .8rem;border-radius:20px;margin-bottom:1.2rem}
-.hero h1{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:#F0F4FF;line-height:1.15;margin-bottom:.5rem}
+.hero h1{font-size:clamp(2rem,4vw,3rem);font-weight:900;color:#FFFFFF;line-height:1.2;margin-bottom:.5rem;text-shadow:2px 2px 0px #000000,0 4px 20px rgba(0,0,0,.9);letter-spacing:.02em}
+.hero h1 span{color:#FFD700;text-shadow:2px 2px 0px #000000,0 4px 20px rgba(0,0,0,.9)}
 .hero h1 span{color:#FFD700}
 .hero-title{font-size:1.05rem;color:#5DCAA5;font-weight:500;margin-bottom:.8rem;letter-spacing:.02em}
 .hero-tagline{font-size:1.15rem;color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-style:italic}
@@ -41,18 +41,21 @@ nav{position:fixed;top:0;left:0;right:0;background:var(--navy);z-index:999;paddi
 .btn-outline{background:transparent;color:#fff;padding:.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:600;font-size:.9rem;border:1.5px solid rgba(255,255,255,.35);display:inline-block}
 .btn-outline:hover{border-color:#fff}
 .hero-photo-wrap{display:flex;justify-content:center}
-.photo-placeholder{width:260px;height:300px;border-radius:16px;background:rgba(29,158,117,.15);border:3px solid rgba(29,158,117,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem}
-.photo-initials{width:80px;height:80px;border-radius:50%;background:rgba(29,158,117,.25);display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:700;color:#5DCAA5}
+.photo-placeholder{width:260px;height:300px;border-radius:16px;background:rgba(29,158,117,.15);border:3px solid rgba(29,158,117,.4)}
 .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
 .stat{text-align:center;background:rgba(255,255,255,.06);border-radius:8px;padding:.8rem .5rem;border:1px solid rgba(255,255,255,.08)}
-.stat-num{font-size:1.4rem;font-weight:700;color:#EF9F27;display:block}
+.stat-num{font-size:1.4rem;font-weight:700;color:#FFD700;display:block}
 .stat-label{font-size:.72rem;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.05em}
+
+/* SECTIONS */
 section{padding:80px 2rem}
 .section-inner{max-width:1100px;margin:0 auto}
 .section-tag{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#1D9E75;margin-bottom:.5rem}
 .section-title{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:#0B1F3A;margin-bottom:.75rem}
 .section-divider{width:50px;height:3px;background:#BA7517;border-radius:2px;margin-bottom:2.5rem}
 .bg-alt{background:#F7F8FA}
+
+/* SKILLS */
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
 .skill-card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:1.5rem;border-top:3px solid #1D9E75}
 .skill-card-title{font-size:1rem;font-weight:700;color:#0B1F3A;margin-bottom:1rem}
@@ -60,6 +63,19 @@ section{padding:80px 2rem}
 .tag{background:rgba(29,158,117,.08);color:#0F6E56;border:1px solid rgba(29,158,117,.2);font-size:.78rem;padding:.3rem .65rem;border-radius:20px;font-weight:500}
 .tag-blue{background:rgba(11,31,58,.06);color:#0B1F3A;border:1px solid rgba(11,31,58,.15)}
 .tag-amber{background:rgba(186,117,23,.08);color:#BA7517;border:1px solid rgba(186,117,23,.2)}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.service-card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:1.75rem;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.09)}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:#1D9E75}
+.service-icon{font-size:2rem;margin-bottom:1rem;display:block}
+.service-title{font-size:1rem;font-weight:700;color:#0B1F3A;margin-bottom:.6rem}
+.service-desc{font-size:.875rem;color:#4a5568;line-height:1.7;margin-bottom:1rem}
+.service-list{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
+.service-list li{font-size:.75rem;color:#0F6E56;background:rgba(29,158,117,.08);border:1px solid rgba(29,158,117,.2);padding:.25rem .6rem;border-radius:20px;font-weight:500}
+
+/* PROJECTS */
 .filter-bar{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
 .filter-btn{background:#fff;border:1.5px solid #e2e8f0;color:#4a5568;padding:.4rem 1rem;border-radius:20px;font-size:.82rem;cursor:pointer;font-weight:500;font-family:inherit}
 .filter-btn.active{background:#0B1F3A;border-color:#0B1F3A;color:#fff}
@@ -81,17 +97,21 @@ section{padding:80px 2rem}
 .project-footer{padding:.75rem 1.25rem 1.25rem;display:flex;flex-wrap:wrap;gap:.35rem}
 .tool-tag{background:#F7F8FA;color:#4a5568;font-size:.72rem;padding:.2rem .55rem;border-radius:10px;border:1px solid #e2e8f0}
 .project-metric{font-size:.78rem;font-weight:700;color:#1D9E75;background:rgba(29,158,117,.06);padding:.2rem .55rem;border-radius:10px;border:1px solid rgba(29,158,117,.15)}
+
+/* EDUCATION */
 .edu-timeline{display:flex;flex-direction:column;gap:0}
-.edu-item{display:grid;grid-template-columns:120px 1fr;gap:1.5rem;position:relative;padding-bottom:2rem}
+.edu-item{display:grid;grid-template-columns:140px 1fr;gap:1.5rem;position:relative;padding-bottom:2.5rem}
 .edu-item:last-child{padding-bottom:0}
-.edu-item::before{content:'';position:absolute;left:119px;top:8px;bottom:0;width:1px;background:#e2e8f0}
+.edu-item::before{content:'';position:absolute;left:139px;top:10px;bottom:0;width:2px;background:#e2e8f0}
 .edu-item:last-child::before{display:none}
-.edu-year{font-size:.8rem;font-weight:700;color:#1D9E75;padding-top:4px;text-align:right}
-.edu-dot{position:absolute;left:112px;top:6px;width:16px;height:16px;border-radius:50%;background:#1D9E75;border:3px solid #F7F8FA}
-.edu-card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.1rem 1.25rem;margin-left:.5rem}
+.edu-year{font-size:.85rem;font-weight:700;color:#1D9E75;padding-top:5px;text-align:right;white-space:nowrap}
+.edu-dot{position:absolute;left:131px;top:6px;width:18px;height:18px;border-radius:50%;background:#1D9E75;border:3px solid #F7F8FA;box-shadow:0 0 0 2px #1D9E75}
+.edu-card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1.1rem 1.25rem;margin-left:.75rem}
 .edu-degree{font-weight:700;color:#0B1F3A;font-size:.95rem;margin-bottom:.2rem}
 .edu-school{color:#1D9E75;font-size:.85rem;font-weight:600;margin-bottom:.25rem}
 .edu-detail{font-size:.8rem;color:#4a5568}
+
+/* CONTACT */
 #contact{background:#0B1F3A}
 #contact .section-title{color:#fff}
 #contact .section-tag{color:#5DCAA5}
@@ -107,25 +127,31 @@ section{padding:80px 2rem}
 .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,.3)}
 .form-group textarea{resize:vertical;min-height:100px}
 .btn-send{background:#1D9E75;color:#fff;border:none;padding:.75rem 1.5rem;border-radius:6px;font-weight:600;font-size:.9rem;cursor:pointer;width:100%;font-family:inherit}
+
 footer{background:#070f1e;color:rgba(255,255,255,.4);text-align:center;padding:1.5rem;font-size:.8rem}
 footer a{color:rgba(255,255,255,.5);text-decoration:none}
+
+/* RESPONSIVE */
 @media(max-width:768px){
   .hero-inner{grid-template-columns:1fr;text-align:center}
   .hero-photo-wrap{order:-1}
   .photo-placeholder{width:160px;height:180px}
-  .photo-initials{width:60px;height:60px;font-size:1.4rem}
   .clients{justify-content:center}
   .hero-btns{justify-content:center}
   .contact-grid{grid-template-columns:1fr}
-  .edu-item{grid-template-columns:80px 1fr;gap:1rem}
-  .edu-item::before{left:79px}
-  .edu-dot{left:72px}
+  .edu-item{grid-template-columns:90px 1fr;gap:1rem}
+  .edu-item::before{left:89px}
+  .edu-dot{left:81px}
   .nav-links{display:none}
   .hamburger{display:flex}
   .projects-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
 }
 @media(max-width:480px){
   .hero-stats{grid-template-columns:1fr 1fr}
+  .edu-item{grid-template-columns:75px 1fr}
+  .edu-item::before{left:74px}
+  .edu-dot{left:66px}
 }
 </style>
 </head>
@@ -136,6 +162,7 @@ footer a{color:rgba(255,255,255,.5);text-decoration:none}
     <a class="nav-logo" href="#hero">EAO<span>.</span></a>
     <ul class="nav-links">
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -148,15 +175,17 @@ footer a{color:rgba(255,255,255,.5);text-decoration:none}
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="#skills" onclick="this.parentElement.classList.remove('open')">Skills</a>
+  <a href="#services" onclick="this.parentElement.classList.remove('open')">Services</a>
   <a href="#projects" onclick="this.parentElement.classList.remove('open')">Projects</a>
   <a href="#education" onclick="this.parentElement.classList.remove('open')">Education</a>
   <a href="#contact" onclick="this.parentElement.classList.remove('open')">Contact</a>
 </div>
 
+<!-- HERO -->
 <section id="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-badge">&#9679; Available for Research Engagements</div>
+      <div class="hero-badge">&#9679; Open to Global Research Collaborations</div>
       <h1>Elijah Ayomide<br><span>Olatunji</span></h1>
       <p class="hero-title">Research &amp; Human Insights Specialist</p>
       <p class="hero-tagline">Turning Complex Human Data into Strategic Insights</p>
@@ -182,13 +211,14 @@ footer a{color:rgba(255,255,255,.5);text-decoration:none}
     </div>
     <div class="hero-photo-wrap">
       <div style="display:flex;flex-direction:column;align-items:center;gap:.75rem">
-      <img src="photo.png" alt="Elijah Ayomide Olatunji" style="width:260px;height:300px;border-radius:16px;object-fit:cover;object-position:top;border:3px solid rgba(29,158,117,.4)">
-        <p style="color:rgba(255,255,255,.85);font-size:1.05rem;font-weight:600;letter-spacing:.03em;text-align:center">Elijah Ayomide Olatunji</p>
+        <div class="photo-placeholder"></div>
+        <p style="color:#FFD700;font-size:1.05rem;font-weight:700;letter-spacing:.04em;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,.4)">Elijah Ayomide Olatunji</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="bg-alt">
   <div class="section-inner">
     <p class="section-tag">Expertise</p>
@@ -241,7 +271,92 @@ footer a{color:rgba(255,255,255,.5);text-decoration:none}
   </div>
 </section>
 
-<section id="projects">
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <p class="section-tag">What I Offer</p>
+    <h2 class="section-title">Services</h2>
+    <div class="section-divider"></div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <span class="service-icon">&#128270;</span>
+        <h3 class="service-title">Qualitative Data Analysis</h3>
+        <p class="service-desc">End-to-end coding and analysis of interview transcripts, focus groups, and open-ended survey responses using industry-leading software.</p>
+        <ul class="service-list">
+          <li>Thematic &amp; content analysis</li>
+          <li>Inductive and deductive coding</li>
+          <li>Grounded theory analysis</li>
+          <li>MAXQDA, NVivo, ATLAS.ti</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">&#128203;</span>
+        <h3 class="service-title">Program Evaluation &amp; M&amp;E</h3>
+        <p class="service-desc">Rigorous evaluation of development programs, NGO initiatives, and government-funded projects from design through final reporting.</p>
+        <ul class="service-list">
+          <li>Endline &amp; baseline evaluations</li>
+          <li>KPI tracking and analysis</li>
+          <li>Field data collection oversight</li>
+          <li>Final evaluation report writing</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">&#128101;</span>
+        <h3 class="service-title">UX Research &amp; User Insights</h3>
+        <p class="service-desc">Human-centered research that translates user feedback and behavioural data into actionable product and design recommendations.</p>
+        <ul class="service-list">
+          <li>Open-ended response analysis</li>
+          <li>User sentiment &amp; pain point mapping</li>
+          <li>Platform usability insights</li>
+          <li>Engagement flow optimization</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">&#127757;</span>
+        <h3 class="service-title">Survey Design &amp; Field Research</h3>
+        <p class="service-desc">Design, scripting, and deployment of survey instruments for large-scale data collection with full quality assurance and enumerator training.</p>
+        <ul class="service-list">
+          <li>SurveyCTO instrument scripting</li>
+          <li>Enumerator training &amp; supervision</li>
+          <li>Multi-state field coordination</li>
+          <li>Data quality assurance</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">&#9881;</span>
+        <h3 class="service-title">Mixed-Methods Research</h3>
+        <p class="service-desc">Integrated qualitative and quantitative approaches that provide a comprehensive picture of complex social, health, and behavioural phenomena.</p>
+        <ul class="service-list">
+          <li>Research design &amp; framework</li>
+          <li>IRR testing &amp; validation</li>
+          <li>Cross-method data synthesis</li>
+          <li>Statistical analysis (Stata, SPSS)</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">&#128196;</span>
+        <h3 class="service-title">Research Reporting &amp; Writing</h3>
+        <p class="service-desc">Clear, compelling research reports and findings documents tailored for diverse audiences — from academic journals to donor stakeholders.</p>
+        <ul class="service-list">
+          <li>Findings &amp; insights reports</li>
+          <li>Stakeholder-ready presentations</li>
+          <li>Policy briefs &amp; recommendations</li>
+          <li>Academic &amp; technical writing</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="bg-alt">
   <div class="section-inner">
     <p class="section-tag">Portfolio</p>
     <h2 class="section-title">Featured Projects</h2>
@@ -419,7 +534,8 @@ footer a{color:rgba(255,255,255,.5);text-decoration:none}
   </div>
 </section>
 
-<section id="education" class="bg-alt">
+<!-- EDUCATION -->
+<section id="education">
   <div class="section-inner">
     <p class="section-tag">Academic Background</p>
     <h2 class="section-title">Education</h2>
@@ -456,6 +572,7 @@ footer a{color:rgba(255,255,255,.5);text-decoration:none}
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
   <div class="section-inner">
     <p class="section-tag">Get in Touch</p>
@@ -500,7 +617,7 @@ footer a{color:rgba(255,255,255,.5);text-decoration:none}
           <label>Message</label>
           <textarea placeholder="Tell me about your research needs..."></textarea>
         </div>
-        <button class="btn-send" onclick="this.textContent='Message Sent ✓';this.style.background='#0F6E56';setTimeout(()=>{this.textContent='Send Message';this.style.background='';},3000)">Send Message</button>
+        <button class="btn-send" onclick="this.textContent='Message Sent!';this.style.background='#0F6E56';setTimeout(()=>{this.textContent='Send Message';this.style.background='';},3000)">Send Message</button>
       </div>
     </div>
   </div>
